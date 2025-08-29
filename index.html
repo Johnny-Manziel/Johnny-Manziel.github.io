@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#1e3a8a" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Product Instructions</title>
+</head>
+<body class="relative text-gray-100 p-4 sm:p-8 min-h-screen flex flex-col items-center font-mono bg-gradient-to-br from-[#0d57a3] via-[#1e8fff] to-[#8fe6ff] overflow-x-hidden">
+  <div class="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_0%_100%,rgba(0,0,0,0.25),transparent_58%)]"></div>
+    <div class="absolute top-16 left-1/2 -translate-x-1/2 w-[120vmax] h-[120vmax] bg-[radial-gradient(circle,rgba(180,235,255,0.55),transparent_70%)]"></div>
+  </div>
+
+  <!-- CONFIGURATION -->
+  <div class="mt-6 w-full max-w-md bg-blue-950 bg-opacity-90 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 flex flex-col items-center border-2 border-blue-400">
+    <div class="w-full border-b border-blue-400 pb-2 mb-4">
+      <h2 class="text-xl font-bold tracking-widest text-center text-blue-200 letter-spacing-widest">CONFIGURATION</h2>
+    </div>
+    <div class="w-full text-blue-100 text-base space-y-3">
+      <div class="flex justify-between items-center py-1 border-b border-blue-800">
+        <span class="font-semibold">DEVICE PIN</span>
+        <span class="bg-blue-800 bg-opacity-60 px-3 py-1 rounded text-yellow-200 font-bold tracking-wider">000000</span>
+      </div>
+      <div class="text-[10px] -mt-1 mb-2 text-blue-300 tracking-wide">Primary device unlock code.</div>
+
+      <div class="flex justify-between items-center py-1 border-b border-blue-800">
+        <span class="font-semibold">SIGNAL PIN</span>
+        <span class="bg-blue-800 bg-opacity-60 px-3 py-1 rounded text-blue-100 font-bold tracking-wider">2580</span>
+      </div>
+      <div class="text-[10px] -mt-1 mb-2 text-blue-300 tracking-wide">Protects Signal registration.</div>
+
+      <div class="flex justify-between items-center py-1 border-b border-blue-800">
+        <span class="font-semibold">KILL PIN</span>
+        <span class="bg-blue-800 bg-opacity-60 px-3 py-1 rounded text-blue-100 font-bold tracking-wider">555555</span>
+      </div>
+      <div class="text-[10px] -mt-1 mb-2 text-blue-300 tracking-wide">Triggers immediate secure wipe.</div>
+
+      <div class="flex justify-between items-center py-1 border-b border-blue-800">
+        <span class="font-semibold">NO UNLOCK WIPE</span>
+        <span class="bg-blue-800 bg-opacity-60 px-3 py-1 rounded text-blue-100 font-bold tracking-wider">14 DAYS</span>
+      </div>
+      <div class="text-[10px] -mt-1 mb-2 text-blue-300 tracking-wide">Auto‑wipe if unused for this period.</div>
+
+      <div class="flex justify-between items-center py-1 border-b border-blue-800">
+        <span class="font-semibold">FAILED PASSWORD WIPE</span>
+        <span class="bg-blue-800 bg-opacity-60 px-3 py-1 rounded text-blue-100 font-bold tracking-wider">10 ATTEMPTS</span>
+      </div>
+      <div class="text-[10px] -mt-1 text-blue-300 tracking-wide">Wipes after this many incorrect entries.</div>
+    </div>
+    <div class="w-full border-t border-blue-400 mt-4"></div>
+  </div>
+
+  <!-- REMINDER -->
+  <div class="mt-8 w-full max-w-md bg-blue-950 bg-opacity-80 backdrop-blur-sm rounded-xl shadow p-4 sm:p-5 border-2 border-blue-400 relative">
+    <div class="absolute -top-5 left-3 sm:-left-5 flex items-center justify-center px-4 h-10 rounded-full bg-blue-400 text-blue-950 font-bold text-sm tracking-wide shadow-lg border-2 border-blue-800 z-10">
+      NOTE
+    </div>
+    <h3 class="text-lg font-bold text-blue-200 mb-2 tracking-widest mt-4 sm:mt-5">Friendly Reminder</h3>
+    <p class="text-sm text-blue-100 font-mono">
+      The camera roll contains your <span class="font-bold text-blue-200">Threema ID</span> and <span class="font-bold text-blue-200">Mullvad account number</span>. Open <span class="font-bold text-blue-200">Photos/Gallery</span> to view.
+    </p>
+  </div>
+
+  <!-- INSTRUCTIONS -->
+  <div class="mt-8 w-full max-w-4xl space-y-8">
+    <!-- STEP 1 -->
+    <div class="relative bg-blue-950 bg-opacity-80 backdrop-blur-sm rounded-xl shadow p-4 sm:p-6 border-2 border-blue-400 flex flex-col items-start mt-8 w-full">
+      <div class="absolute -top-5 left-3 sm:-left-5 flex items-center justify-center w-10 h-10 rounded-full bg-blue-400 text-blue-950 font-bold text-xl shadow-lg border-2 border-blue-800 z-10">
+        1
+      </div>
+      <ol class="list-none text-blue-100 text-base font-mono w-full m-0">
+        <li>
+          Power on the phone by pressing and holding the 
+          <span class="font-bold" style="color: #00FF00;">power button</span> 
+          until the screen lights up.
+          <div class="relative flex justify-center items-center mt-4">
+            <img 
+              src="images/pixel-9a.png" 
+              alt="Pixel 9a Boot Verification Screen" 
+              class="rounded-lg object-contain mx-auto"
+              style="width: 320px; height: auto;"
+              loading="lazy"
+            />
+          </div>
+          <div class="pt-6">
+            <hr class="border-blue-800 mb-2 w-72 mx-auto" />
+            <div class="text-xs text-blue-300 italic break-words text-center px-2">
+              <span class="font-semibold text-yellow-200">Tip:</span> You can verify your device has not been tampered with if it displays the following boot verification hash:
+              <span class="block mt-2 font-mono text-blue-200 break-all">Pixel 9a: 0508de44ee00bfb49ece32c418af1896391abde0f05b64f41bc9a2dfb589445b</span>
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <!-- STEP 2 -->
+    <div class="relative bg-blue-950 bg-opacity-80 backdrop-blur-sm rounded-xl shadow p-4 sm:p-6 border-2 border-blue-400 mt-8 w-full">
+      <div class="absolute -top-5 left-3 sm:-left-5 flex items-center justify-center w-10 h-10 rounded-full bg-blue-400 text-blue-950 font-bold text-xl shadow-lg border-2 border-blue-800 z-10">
+        2
+      </div>
+      <div class="flex flex-col lg:flex-row gap-8 sm:gap-12 items-stretch">
+        <div class="grid w-full md:w-[420px] md:min-h-[560px] grid-rows-[auto_1fr_auto] relative">
+          <div class="text-blue-100 text-base font-mono pr-2">
+            Unlock the device using the <span class="font-bold text-yellow-200">DEVICE PIN 000000</span> and locate the <span class="font-bold text-blue-200">settings</span> icon.
+          </div>
+          <div class="flex items-center justify-center">
+            <img
+              src="images/settings-icon.png"
+              alt="Settings Icon"
+              class="w-24 h-24 sm:w-28 sm:h-28 object-contain"
+              loading="lazy"
+            />
+          </div>
+          <div class="pt-6">
+            <hr class="border-blue-800 mb-2 w-72 mx-auto" />
+            <p class="text-xs text-blue-300 italic leading-snug">
+              <span class="font-semibold text-yellow-200">Tip:</span> The settings icon will be located at the bottom centre of the home screen.
+            </p>
+          </div>
+        </div>
+        <div class="flex-1 flex justify-center items-end">
+          <video
+            class="rounded-lg border-2 border-blue-400 w-full max-w-[520px]"
+            controls
+            playsinline
+            preload="metadata"
+            poster="images/access-settings-poster.jpg"
+            src="videos/access-settings.mp4"
+            aria-label="Access Settings Video"
+          ></video>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 3 -->
+    <div class="relative bg-blue-950 bg-opacity-80 backdrop-blur-sm rounded-xl shadow p-4 sm:p-6 border-2 border-blue-400 mt-8 w-full">
+      <div class="absolute -top-5 left-3 sm:-left-5 flex items-center justify-center w-10 h-10 rounded-full bg-blue-400 text-blue-950 font-bold text-xl shadow-lg border-2 border-blue-800 z-10">
+        3
+      </div>
+      <div class="flex flex-col lg:flex-row gap-8 sm:gap-12 items-stretch">
+        <div class="w-full md:w-[420px] md:min-h-[560px] grid grid-rows-[auto_1fr_auto]">
+          <ol class="list-decimal list-inside space-y-2 text-blue-100 text-base font-mono pr-2">
+            <li>In <span class="font-bold text-blue-200">Settings</span>, scroll to <span class="font-bold text-blue-200">Security &amp; privacy</span> and tap it.</li>
+            <li>Tap <span class="font-bold text-blue-200">Device unlock</span>.</li>
+            <li>Tap <span class="font-bold text-blue-200">Screen lock</span>.</li>
+            <li>Enter the current PIN <span class="font-bold text-yellow-200">000000</span> when prompted.</li>
+            <li>Select <span class="font-bold text-blue-200">PIN</span>.</li>
+            <li>Set and confirm your <span class="font-bold" style="color:#00FF00;">new</span> <span class="font-bold text-blue-200">PIN</span>.</li>
+          </ol>
+          <div></div>
+          <div class="pt-6">
+            <hr class="border-blue-800 mb-2 w-72 mx-auto" />
+            <p class="text-xs text-blue-300 italic leading-snug text-center px-2">
+              <span class="font-semibold text-yellow-200">Tip:</span> Use at least a six‑digit PIN—ideally eight to ten digits; a long alphanumeric password provides stronger protection.
+            </p>
+          </div>
+        </div>
+        <div class="flex-1 flex justify-center items-end">
+          <video 
+            class="rounded-lg shadow-lg border-2 border-blue-400 w-full max-w-xs lg:max-w-[520px]"
+            controls
+            playsinline
+            preload="metadata"
+            poster="images/set-device-password-poster.jpg"
+            src="videos/set-device-password.mp4"
+            aria-label="Set Device PIN Video"
+          ></video>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 4 -->
+    <div class="relative bg-blue-950 bg-opacity-80 backdrop-blur-sm rounded-xl shadow p-4 sm:p-6 border-2 border-blue-400 mt-8 w-full">
+      <div class="absolute -top-5 left-3 sm:-left-5 flex items-center justify-center w-10 h-10 rounded-full bg-blue-400 text-blue-950 font-bold text-xl shadow-lg border-2 border-blue-800 z-10">
+        4
+      </div>
+      <div class="flex flex-col lg:flex-row gap-8 sm:gap-12 items-stretch">
+        <div class="grid w-full md:w-[420px] md:min-h-[560px] grid-rows-[auto_1fr_auto] relative">
+          <div class="text-blue-100 text-base font-mono pr-2">
+            <ol class="list-decimal list-inside space-y-2">
+              <li>Swipe down from the top of the screen.</li>
+              <li>Swipe down again to fully expand Quick Settings.</li>
+              <li>Tap the <span class="font-bold text-blue-200">user icon</span> <span class="font-semibold text-red-400">(red)</span> in the bottom right.</li>
+              <li>Select the <span class="font-bold text-teal-300">UNKNOWN</span> user profile.</li>
+              <li>In the <span class="font-bold text-teal-300">UNKNOWN</span> profile, change its PIN as in Step 3.</li>
+              <li><span class="font-semibold text-red-400 uppercase">IMPORTANT:</span> Use a different PIN for each user profile.</li>
+            </ol>
+          </div>
+          <div class="flex items-center justify-center">
+            <img
+              src="images/user-profiles.png"
+              alt="User profiles icon"
+              class="w-56 h-56 xs:w-60 xs:h-60 sm:w-72 sm:h-72 object-contain"
+              loading="lazy"
+            />
+          </div>
+          <div class="pt-6">
+            <hr class="border-blue-800 mb-2 w-72 mx-auto" />
+            <p class="text-xs text-blue-300 italic leading-snug">
+              <span class="font-semibold text-yellow-200">Tip:</span> You can exit the secondary profile at any time by pressing and holding the power button and tapping 'End session'.
+            </p>
+          </div>
+        </div>
+        <div class="flex-1 flex justify-center items-end">
+          <video
+            class="rounded-lg border-2 border-blue-400 w-full max-w-[520px]"
+            controls
+            playsinline
+            preload="metadata"
+            poster="images/user-profile-switch-poster.jpg"
+            src="videos/user-profile-switch.mp4"
+            aria-label="User profile switch video"
+          ></video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SETUP COMPLETE -->
+  <div id="setup-complete" class="mt-10 w-full max-w-md bg-blue-950 bg-opacity-90 backdrop-blur-sm rounded-xl border-2 border-green-400 shadow p-5 text-center">
+    <div class="flex flex-col items-center space-y-3">
+      <div class="w-14 h-14 flex items-center justify-center rounded-full bg-green-500 text-blue-950 font-extrabold text-2xl shadow-inner select-none">✓</div>
+      <h2 class="text-xl font-bold tracking-wide text-green-300">Setup Complete</h2>
+      <p class="text-sm text-blue-200 leading-snug">
+        Your device and secondary profile are now configured. Keep each profile PIN unique and secure.
+        <span class="block mt-2 text-xs text-blue-300">Optional tool: use the Random PIN Generator below only if you wish to create a new PIN.</span>
+      </p>
+      <div class="flex flex-col sm:flex-row gap-3 mt-2 w-full justify-center">
+        <button data-print-hide
+          onclick="window.scrollTo({top:0,behavior:'smooth'})"
+          class="bg-blue-400 hover:bg-blue-500 text-blue-950 font-bold py-2 px-5 rounded transition">
+          Back to Top
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- RANDOM PIN GENERATOR -->
+  <div class="mt-8 w-full max-w-md bg-blue-950 bg-opacity-80 backdrop-blur-sm rounded-xl shadow p-4 sm:p-6 border-2 border-blue-400 text-center relative">
+    <div class="absolute -top-5 left-3 sm:-left-5 flex items-center justify-center px-4 h-10 rounded-full bg-blue-400 text-blue-950 font-bold text-sm tracking-wide shadow-lg border-2 border-blue-800 z-10">
+      OPTIONAL
+    </div>
+    <h2 class="text-lg font-bold text-blue-200 mt-2 tracking-widest">
+      RANDOM PIN GENERATOR
+    </h2>
+    <p class="text-xs text-blue-300 italic mb-4 mt-1">
+      Use only if you want to generate a fresh random PIN; otherwise skip this tool.
+    </p>
+    <div class="flex flex-col items-center space-y-3">
+      <button
+        onclick="generatePin()"
+        class="bg-blue-400 hover:bg-blue-500 text-blue-950 font-bold py-2 px-6 rounded transition"
+      >
+        Generate 8-Digit PIN
+      </button>
+      <div id="pinResult" class="text-2xl font-mono text-yellow-200 mt-2"></div>
+      <div class="text-xs text-blue-300 italic text-center">
+        <span class="font-semibold text-yellow-200">Tip:</span> Use this to create a strong, random PIN for your device.<br>
+        <span class="block mt-1">Nothing is saved or sent—everything is generated locally in your browser.</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  function generatePin() {
+    let pin = '';
+    for (let i = 0; i < 8; i++) {
+      pin += Math.floor(Math.random() * 10);
+    }
+    document.getElementById('pinResult').textContent = pin;
+  }
+  </script>
+
+  <style>
+    html, body { touch-action: manipulation; overflow-x: hidden; overscroll-behavior-x: none; }
+    @media print {
+      body { background: #ffffff !important; }
+      [data-print-hide] { display: none !important; }
+      video { display: none !important; }
+      #pinResult + div, #pinResult, button[onclick*="generatePin"] { display:none !important; }
+    }
+  </style>
+
+  <!-- CONTACT -->
+  <div class="mt-8 w-full max-w-md bg-blue-950 bg-opacity-80 backdrop-blur-sm rounded-xl shadow p-4 border-2 border-blue-400 text-center">
+    <div class="text-blue-200 font-mono text-sm">
+      <div>
+        <span class="font-semibold">Signal:</span>
+        <span class="text-blue-300">COMING SOON...</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -7,8 +7,8 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Product Instructions</title>
 </head>
-<body class="relative text-gray-100 p-4 sm:p-8 min-h-screen flex flex-col items-center font-mono bg-gradient-to-br from-[#0d57a3] via-[#1e8fff] to-[#8fe6ff] overflow-x-hidden">
-  <div class="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+<body class="relative text-gray-100 p-4 sm:p-8 min-h-screen min-h-[100svh] md:min-h-[100dvh] flex flex-col items-center font-mono bg-gradient-to-br from-[#0d57a3] via-[#1e8fff] to-[#8fe6ff] overflow-x-hidden">
+  <div class="pointer-events-none fixed inset-0 -z-10 overflow-hidden" aria-hidden="true">
     <div class="absolute inset-0 bg-[radial-gradient(circle_at_0%_100%,rgba(0,0,0,0.25),transparent_58%)]"></div>
     <div class="absolute top-16 left-1/2 -translate-x-1/2 w-[120vmax] h-[120vmax] bg-[radial-gradient(circle,rgba(180,235,255,0.55),transparent_70%)]"></div>
   </div>
@@ -275,6 +275,14 @@
 
   <style>
     html, body { touch-action: manipulation; overflow-x: hidden; overscroll-behavior-x: none; }
+    /* Fallback gradient on the html element for iOS Safari gaps */
+    html { background: linear-gradient(135deg, #0d57a3 0%, #1e8fff 50%, #8fe6ff 100%); }
+    body { background: transparent; }
+
+    /* Prefer small/dynamic viewport heights on Safari */
+    @supports (height: 100svh) { body { min-height: 100svh; } }
+    @supports (height: 100dvh) { body { min-height: 100dvh; } }
+
     @media print {
       body { background: #ffffff !important; }
       [data-print-hide] { display: none !important; }
